@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.currencie.CurrencieFragment"
+    android:background="@color/black">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/currencie_cl"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:background="@drawable/background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="110dp">
+
+        <TextView
+            android:id="@+id/currencie_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:fontFamily="sans-serif-black"/>
+
+        <TextView
+            android:id="@+id/currencie_tv_variation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0,000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/currencie_tv_title"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="10sp"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-black"/>
+
+        <TextView
+            android:id="@+id/currencie_tv_buy_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compra:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/currencie_tv_variation"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="10sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-black"/>
+
+        <TextView
+            android:id="@+id/currencie_tv_buy_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1,152"
+            app:layout_constraintStart_toEndOf="@+id/currencie_tv_buy_title"
+            app:layout_constraintTop_toBottomOf="@+id/currencie_tv_variation"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="10sp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-black"/>
+
+        <TextView
+            android:id="@+id/currencie_tv_sell_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Venda:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/currencie_tv_buy_title"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="10sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-black"/>
+
+        <TextView
+            android:id="@+id/currencie_tv_sell_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0,584"
+            app:layout_constraintStart_toEndOf="@id/currencie_tv_sell_title"
+            app:layout_constraintTop_toBottomOf="@+id/currencie_tv_buy_title"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="10sp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-black"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/currencie_tv_balance_available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saldo disponível:"
+        app:layout_constraintTop_toBottomOf="@+id/currencie_cl"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="35sp"
+        android:layout_marginTop="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"/>
+
+    <TextView
+        android:id="@+id/currencie_tv_value_balance_available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 0"
+        app:layout_constraintTop_toBottomOf="@+id/currencie_cl"
+        app:layout_constraintStart_toEndOf="@+id/currencie_tv_balance_available"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="20sp"
+        android:textStyle="normal"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"/>
+
+    <TextView
+        android:id="@+id/currencie_tv_balance_available_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintTop_toBottomOf="@+id/currencie_tv_balance_available"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="35sp"
+        android:layout_marginTop="20sp"
+        android:textStyle="normal"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"/>
+
+    <TextView
+        android:id="@+id/currencie_tv_balance_available_description2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="moeda"
+        app:layout_constraintTop_toBottomOf="@+id/currencie_tv_balance_available"
+        app:layout_constraintStart_toEndOf="@id/currencie_tv_balance_available_description"
+        android:layout_marginStart="5sp"
+        android:layout_marginTop="20sp"
+        android:textStyle="normal"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"/>
+
+    <TextView
+        android:id="@+id/currencie_tv_balance_available_description3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="em caixa"
+        app:layout_constraintTop_toBottomOf="@+id/currencie_tv_balance_available"
+        app:layout_constraintStart_toEndOf="@id/currencie_tv_balance_available_description2"
+        android:layout_marginStart="5sp"
+        android:layout_marginTop="20sp"
+        android:textStyle="normal"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"/>
+
+    <Button
+        android:id="@+id/currencie_btn_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="20sp"
+        android:text="COMPRAR"
+        android:backgroundTint="@color/green"/>
+
+    <Button
+        android:id="@+id/currencie_btn_sell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="20sp"
+        android:text="VENDER"
+        android:backgroundTint="@color/orange"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
